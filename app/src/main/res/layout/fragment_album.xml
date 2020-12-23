@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlbumFragment">
+
+
+    <TextView
+        android:id="@+id/albumFragmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Album.Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/albumFragmentImage"
+        android:layout_width="242dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/albumFragmentTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albumFragmentTitle"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/albumFragmentShare"
+        android:layout_width="75dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/share_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/albumFragmentImage" />
+
+    <ImageView
+        android:id="@+id/albumFragmentArtistImage"
+        android:layout_width="87dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/albumFragmentImage"
+        app:layout_constraintTop_toBottomOf="@+id/albumFragmentImage"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/albumFragmentArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="ArtistName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="@+id/albumFragmentArtistImage"
+        app:layout_constraintStart_toEndOf="@+id/albumFragmentArtistImage"
+        app:layout_constraintTop_toTopOf="@+id/albumFragmentArtistImage" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/albumFragmentTracksRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albumFragmentArtistImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

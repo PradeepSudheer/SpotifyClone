@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MainActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="EmailAddress">Email Address</string>
+    <string name="Password">Password</string>
+    <string name="hello_search_fragment">searchfragment</string>
+    <string name="hello_shared_fragment">shared Fragment</string>
+    <string name="hello_like_fragment">Like Fragment</string>
+    <string name="hello_history_fragment">history fragment</string>
+    <string name="UserName">Enter Username</string>
+    <string name="error">Error !!!!</string>
+    <string name="success">Success !!!!</string>
+    <string name="name_hint">Please Enter Name</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="cancel">cancel</string>
+    <string name="invalidemail">invalid email or password</string>
+</resources>
